@@ -1,0 +1,166 @@
+* {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #555;
+}
+
+header {
+	background-color: #a3cff2;
+	padding: 25px;
+	display: flex;
+	align-items: center;
+	height: 150px;
+}
+
+.logo {
+	padding-right: 15px;
+}
+
+header h1 {
+	font-weight: bold;
+	color: #2572af;
+}
+
+body {
+	background-color: #e6e6e6;
+	margin: 0px;
+}
+
+#content {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.sidebar {
+	width: 250px;
+	padding: 30px 20px;
+	background-color: #fdd7dc;
+	box-shadow: 4px 0px 8px 0px #dadada;
+	position: fixed;
+	top: 200px;
+	bottom: 0;
+	overflow-y: auto;
+	left: 0;
+	z-index: 10;
+
+	font-size: larger;
+}
+
+.content .displayedPage {
+	flex-grow: 1;
+	padding: 30px;
+	margin-left: 270px;
+	width: calc(100% - 270px);
+}
+
+.displayedPage {
+	flex-grow: 1;
+	padding: 30px;
+	margin-left: 270px;
+}
+
+.blog-post-card {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+}
+
+.blog-post-card h5 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.blog-post-card p {
+	margin-bottom: 5px;
+}
+
+.blog-post-card ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.comment-list {
+	margin-top: 10px;
+}
+
+.comment-list li {
+	border-bottom: 1px solid #ccc;
+	padding: 5px 0;
+}
+
+.likes-button {
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	margin-left: auto;
+}
+
+.like-icon {
+	width: 20px;
+	height: auto;
+	margin-right: 5px;
+}
+
+.likes-count {
+	font-size: 14px;
+	color: #555;
+}
+
+footer {
+	text-align: center;
+}
+
+footer a {
+	margin: 20px;
+}
+
+.btn {
+	background-color: #a3cff2;
+}
+
+.blog-post-card h5,
+.blog-post-card p {
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.blog-post-card .author {
+	border-bottom: 1px solid #555;
+}
+
+.comment-list li,
+.blog-post-card p {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.like-icon {
+	margin-right: 10px;
+}
+
+#blogFormContainer .form-group {
+	margin-bottom: 15px;
+}
+
+#blogFormContainer .form-group label,
+#blogFormContainer .form-group input,
+#blogFormContainer .form-group textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+#blogFormContainer .form-group input,
+#blogFormContainer .form-group textarea {
+	box-sizing: border-box;
+}
+
+.comment-form .form-control {
+	width: 100%;
+}
+.comment-form button {
+	width: 100%;
+}
